@@ -1,0 +1,10 @@
+Case Study :-1
+   You are asked to develop a sample java application to manage student data in file student.txt as a collection of records
+the attributes for student record are RollNo,Name,Age,Marks1,Marks2,Marks3,Marks4,Marks5,grade, you should create menu driven
+application to perform CRUD operations on student file
+       1) Add Record
+       2) Read All Records
+       3) Read Record on RollNo
+       4) Delete Record on Name
+       4) Delete Record on RollNO
+       5) Update Record on RollNO,Name,Age
