@@ -1,0 +1,29 @@
+
+package package1;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+public class Form {
+    public static void main(String[] args) {
+        WebDriver driver = new ChromeDriver();
+        driver.get("https://example.com/register");
+        driver.findElement(By.id("name")) .sendKeys("Dharani");
+        driver.findElement(By.id("email")).sendKeys("dharani@example.com");
+        driver.findElement(By.id("password")).sendKeys("Test@123");
+        WebElement countryElement =driver.findElement(By.id("country"));
+        Select country = new Select(countryElement);
+        country.selectByVisibleText("India");
+        WebElement terms =driver.findElement(By.id("terms"));
+        if (!terms.isSelected()) {
+            terms.click();
+        }
+        driver.findElement(By.id("submit")).click();
+        WebElement message=driver.findElement(By.id("successMessage"));
+        if (message.isDisplayed()) {
+            System.out.println(message.getText());
+        }
+        driver.quit();
+    }
+}

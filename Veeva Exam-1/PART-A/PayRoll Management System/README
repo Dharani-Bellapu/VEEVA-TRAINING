@@ -1,0 +1,46 @@
+OUTPUT:-
+
+PS C:\Veeva Exam-1\PayRoll Management System> javac Main.java
+PS C:\Veeva Exam-1\PayRoll Management System> java Main
+Enter the number of employees to add:
+3
+Enter the details of employee 1:
+fulltime
+101
+alice
+it
+Enter base salary and bonus:
+60000
+10000
+Enter the details of employee 2:
+parttime
+102
+bob
+it
+Enter hourly rate and hours worked:
+500
+100
+Enter the details of employee 3:
+fulltime
+103
+charlie
+hr
+Enter base salary and bonus:
+55000
+5000
+Enter the salary threshold for top earners:
+1- Department-wise total Salary
+2- Top Earners
+1
+Department: hr, Total Salary: 60000.0
+Department: it, Total Salary: 70600.0
+1- Department-wise total Salary
+2- Top Earners
+2
+55000
+Top Earners (Salary > 55000.0):
+alice
+charlie
+1- Department-wise total Salary
+2- Top Earners
+3

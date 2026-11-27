@@ -1,0 +1,18 @@
+
+package package1;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+public class Form {
+public static void main(String[] args) {
+WebDriver driver = new ChromeDriver();
+driver.get("https://www.tutorialspoint.com/selenium/practice/register.php");
+driver.findElement(By.id("firstname")).sendKeys("Dharani");
+driver.findElement(By.id("lastname")).sendKeys("Bellapu");
+driver.findElement(By.id("username")).sendKeys("Dharani123");
+driver.findElement(By.id("password")).sendKeys("Test@123");
+driver.findElement(By.xpath("//*[@id='signupForm']/div[5]/input")).click();
+System.out.println("Registration form submitted");
+driver.quit();
+}
+}
